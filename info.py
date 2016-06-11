@@ -11,7 +11,7 @@ import logging
 reload(sys)
 sys.setdefaultencoding("utf-8")
 
-bot = telebot.TeleBot("TOKEN")
+bot = telebot.TeleBot("224509978:AAHRX9d_iZi_Jnp9x8EFdOQH4xmxmZGdnkI")
 
 @bot.message_handler(commands=['start', 'help'])
 def welcome(m):
@@ -37,20 +37,20 @@ def id(m):      # info menu
 def c(m):
     uid = m.chat.id
     bot.send_chat_action(uid, 'typing')
-    bot.send_contact(uid, phone_number="+989011659395", first_name="Negative")
+    bot.send_contact(uid, phone_number="09375878757", first_name="mohammad_mmb")
 
 
 @bot.message_handler(commands=['about']) # copy right Taylor Team
 def p(m):
     uid = m.chat.id
     bot.send_chat_action(uid, 'typing')
-    bot.send_message(uid, "Taylor Team development Telegram bot and web mastering \n\n developers : \n [negative](https://telegram.me/negative_officiall) \n [Parham](https://telegram.me/UnFriendlly)", parse_mode="Markdown")
-    bot.send_photo(uid, open('taylor.jpg'), caption="@Taylor_Team")
+    bot.send_message(uid, "(info bot \n\n\n info you dar in bot )", parse_mode="Markdown")
+    bot.send_photo(uid, open('taylor.jpg'), caption="@mohammad_mmb")
 
 @bot.message_handler(commands=['idbot'])
 def handler(m):
     cid = m.chat.id
-    bot.send_message(cid, "My Name is ID bot \n creator and developer : [negative](https://telegram.me/negative_officiall) \n development channel : [Taylor Team](https://telegram.me/taylor_team)\n\n [github](https://github.com/taylor-team/id-bot)", parse_mode="Markdown")
+    bot.send_message(cid, "(salam man info toro midam \n\n be man **** bede \n\n bos bos \n\n\n id babam : @mohammad_mmb", parse_mode="Markdown")
     
 @bot.message_handler(commands=['idme'])
 def test_handler(m):
